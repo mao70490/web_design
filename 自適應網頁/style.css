@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+html,body{
+    font-family: Arial, Helvetica,"微軟正黑體", sans-serif;
+}
+.header{
+    height: 100px;
+}
+
+.header h1{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.header h3{
+    position: absolute;
+    right: 50px;
+    top: 45px;
+    display: none;
+}
+
+.header ul{
+    position: absolute;
+    right: 50px;
+    top: 45px;
+}
+.header .close{
+    background-color: rgb(240, 106, 106);
+    color: blueviolet;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    display: none;
+}
+.header li{
+    float: left;
+    list-style: none;
+}
+.header li a{
+    margin-right: 10px;
+    color: rgb(252, 141, 7);
+}
+.header li a:hover{}
+
+.banner{}
+.banner img{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+
+.office{
+    background-color: rgb(3, 109, 248);
+    display: flex;
+    justify-content: center;
+}
+.office .ofbox{
+    background-color: #fff;
+    width: 20%;
+    margin: 1%;
+    text-align: center;
+    padding: 10px 0;
+
+}
+.office .ofbox img{
+    max-width: 100%;
+    height: auto;
+}
+.office .ofbox p{}
+
+.ad{
+    display: flex;
+}
+.adbox{
+    width: 25%;
+    
+}
+.adbox img{
+    height: auto;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav .navbox{
+    background-color: rgb(11, 159, 179);
+    width: 15%;
+    margin: 1%;
+}
+.nav .navbox p{
+    margin-bottom: 10px;
+}
+.nav .navbox ul{}
+.nav .navbox li{
+    list-style: none;
+}
+.nav .navbox li a{
+    line-height: 30px;
+}
+.nav .navbox li a:hover{}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+}
+.footer h2{}
+.footer p{}
+
+@media screen and (max-width:1200px) and (min-width:769px){
+
+    .office{
+            flex-wrap: wrap;
+    }
+    .office .ofbox{
+        width: 40%;
+    }
+    .office .ofbox img{
+        max-width: 100%;
+        height: auto;
+    }
+    .office .ofbox p{}
+    
+    .ad{
+        flex-wrap: wrap;
+    }
+    .adbox{
+        width: 50%;
+        
+    }
+
+    
+    .nav{
+        flex-wrap: wrap;
+    }
+    .nav .navbox{
+        
+        width: 30%;       
+    }
+    
+    
+}
+
+@media screen and (max-width:768px){
+
+.header h3{
+    position: absolute;
+    right: 50px;
+    top: 45px;
+    display: block;
+}
+.header ul{
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    width: 260px;
+    background-color: rgb(187, 248, 19);
+    padding: 20px;
+    display: none;
+}
+.header .close{
+    background-color: rgb(240, 106, 106);
+    color: blueviolet;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.header li{
+    float: none;
+    list-style: none;
+}
+.header li a{
+    margin-right: 10px;
+    color: rgb(252, 141, 7);
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    margin: 5px;
+    text-decoration: none;
+}
+.header li a:hover{}
+
+
+
+.office{
+        flex-wrap: wrap;
+}
+.office .ofbox{
+    width: 80%;
+}
+
+.ad{
+    flex-wrap: wrap;
+}
+.adbox{
+    width: 100%;    
+}
+.nav{
+    flex-wrap: wrap;
+}
+.nav .navbox{
+    width: 60%; 
+}
+    
+}
+
